@@ -1,0 +1,12 @@
+{ "key": "ctrl+y",                "command": "redo" },
+
+{
+  "key": "ctrl+y",
+  "command": "acceptSelectedSuggestion",
+  "when": "suggestWidgetVisible && textInputFocus"
+},
+{
+  "key": "ctrl+y",
+  "command": "editor.action.inlineSuggest.commit",
+  "when": "inlineSuggestionVisible && textInputFocus && !suggestWidgetVisible"
+}

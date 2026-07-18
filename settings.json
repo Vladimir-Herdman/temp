@@ -1,0 +1,52 @@
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [ "<leader>", "f", "h" ],
+            "commands": [ "editor.action.showHover" ]
+        },
+        {
+            "before": [ "<leader>", ";" ],
+            "after": [ "m", "r", "A", ";", "<Esc>", "`", "r" ]
+        },
+        {
+            "before": [ "<leader>", "," ],
+            "after": [ "m", "r", "A", ",", "<Esc>", "`", "r" ]
+        },
+        {
+            "before": [ "<leader>", "h" ],
+            "after": [ ":", "t", "a", "b", "p", "r", "e", "v", "i", "o", "u", "s", "<CR>" ]
+        },
+        {
+            "before": [ "<leader>", "w" ],
+            "after": [ ":", "w", "<CR>" ]
+        },
+        {
+            "before": [ "<leader>", "q" ],
+            "after": [ ":", "q", "<CR>" ]
+        },
+        {
+            "before": [ "<leader>", "l" ],
+            "after": [ ":", "t", "a", "b", "N", "e", "x", "t", "<CR>" ]
+        },
+        {
+            "before": [ "<leader>", "m", ],
+            "commands": [
+                {
+                    "command": "workbench.action.terminal.focus"
+                },
+                {
+                    "command": "workbench.action.terminal.sendSequence",
+                    "args": {
+                        "text": "dotnet run\u000d"
+                    }
+                },
+                {
+                    "command": "workbench.action.focusActiveEditorGroup"
+                },
+            ]
+        }
+    ]
+}
